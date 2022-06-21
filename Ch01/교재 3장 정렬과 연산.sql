@@ -139,8 +139,20 @@ price * quantity AS amount
 FROM sample34
 ORDER BY amount DESC;
 
-
 #테이블 생성/데이터 저장
+CREATE TABLE `sample341` (`amount` DECIMAL(6, 2));
+
+INSERT INTO `sample341` VALUES (5961.60);
+INSERT INTO `sample341` VALUES (2138.40);
+INSERT INTO `sample341` VALUES (1080.60);
+
+DROP TABLE `sample341`;
+
 #p127
+SELECT amount, ROUND(amount) FROM sample341;
+
 #p128
+SELECT amount, ROUND(amount, 1) FROM sample341;
+
 #p129
+SELECT amount, ROUND(amount, -2) FROM sample341;
